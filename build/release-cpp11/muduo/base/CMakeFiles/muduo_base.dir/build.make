@@ -72,9 +72,32 @@ muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o.provides: muduo/base/CMakeFi
 
 muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o.provides.build: muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o
 
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o: muduo/base/CMakeFiles/muduo_base.dir/flags.make
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o: /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o"
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/muduo_base.dir/CurrentThread.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.cc
+
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_base.dir/CurrentThread.cc.i"
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.cc > CMakeFiles/muduo_base.dir/CurrentThread.cc.i
+
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_base.dir/CurrentThread.cc.s"
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.cc -o CMakeFiles/muduo_base.dir/CurrentThread.cc.s
+
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.requires:
+.PHONY : muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.requires
+
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.provides: muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.requires
+	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.provides.build
+.PHONY : muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.provides
+
+muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.provides.build: muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o
+
 muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o: muduo/base/CMakeFiles/muduo_base.dir/flags.make
 muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o: /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o"
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/muduo_base.dir/Exception.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.cc
 
@@ -98,12 +121,14 @@ muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o.provides.build: muduo/base/C
 # Object files for target muduo_base
 muduo_base_OBJECTS = \
 "CMakeFiles/muduo_base.dir/Timestamp.cc.o" \
+"CMakeFiles/muduo_base.dir/CurrentThread.cc.o" \
 "CMakeFiles/muduo_base.dir/Exception.cc.o"
 
 # External object files for target muduo_base
 muduo_base_EXTERNAL_OBJECTS =
 
 lib/libmuduo_base.a: muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o
+lib/libmuduo_base.a: muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o
 lib/libmuduo_base.a: muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o
 lib/libmuduo_base.a: muduo/base/CMakeFiles/muduo_base.dir/build.make
 lib/libmuduo_base.a: muduo/base/CMakeFiles/muduo_base.dir/link.txt
@@ -116,6 +141,7 @@ muduo/base/CMakeFiles/muduo_base.dir/build: lib/libmuduo_base.a
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/build
 
 muduo/base/CMakeFiles/muduo_base.dir/requires: muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o.requires
+muduo/base/CMakeFiles/muduo_base.dir/requires: muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o.requires
 muduo/base/CMakeFiles/muduo_base.dir/requires: muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o.requires
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/requires
 
