@@ -7,3 +7,6 @@ add_test(NAME atomic_unittest COMMAND atomic_unittest)
 
 add_executable(exception_test Exception_test.cc)
 target_link_libraries(exception_test muduo_base)
+
+add_executable(thread_test Thread_test.cc)
+target_link_libraries(thread_test muduo_base)

@@ -1,19 +1,23 @@
 #ifndef HEX_BASE_THREAD_H
 #define HEX_BASE_THREAD_H
 
-#include <pthread.h>
-#include <functional>
-#include <iostream>
+#include "muduo/base/CountDownLatch.h"
+#include "muduo/base/Atomic.h"
+#include "muduo/base/Types.h"
 
-namespace hex
+#include <functional>
+#include <memory>
+#include <pthread.h>
+
+namespace muduo
 {
 
-class Thread
+class Thread : noncopyable
 {
  public:
    typedef std::function<void ()> ThreadFunc;
 
-   explicit Thread(const ThreadFunc&, const std::string& name = std::string());
+   explicit Thread(ThreadFunc, const string& name = string());
    ~Thread();
 
    void start();
@@ -44,6 +48,6 @@ namespace CurrentThread
   bool isMainThread();
 }
 
-}
+} // namespace muduo
 
 #endif
