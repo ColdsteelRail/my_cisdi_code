@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/progress.marks
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,44 +136,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named muduo_base
+# Convenience name for target.
+muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
 
-# Build rule for target.
-muduo_base: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 muduo_base
-.PHONY : muduo_base
-
-# fast build rule for target.
-muduo_base/fast:
-	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
-.PHONY : muduo_base/fast
-
-#=============================================================================
-# Target rules for targets named timestamp_unittest
-
-# Build rule for target.
-timestamp_unittest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 timestamp_unittest
+# Convenience name for target.
+timestamp_unittest: muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
 .PHONY : timestamp_unittest
 
 # fast build rule for target.
 timestamp_unittest/fast:
-	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
 .PHONY : timestamp_unittest/fast
+
+Timestamp_unittest.o: Timestamp_unittest.cc.o
+.PHONY : Timestamp_unittest.o
+
+# target to build an object file
+Timestamp_unittest.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/Timestamp_unittest.cc.o
+.PHONY : Timestamp_unittest.cc.o
+
+Timestamp_unittest.i: Timestamp_unittest.cc.i
+.PHONY : Timestamp_unittest.i
+
+# target to preprocess a source file
+Timestamp_unittest.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/Timestamp_unittest.cc.i
+.PHONY : Timestamp_unittest.cc.i
+
+Timestamp_unittest.s: Timestamp_unittest.cc.s
+.PHONY : Timestamp_unittest.s
+
+# target to generate assembly for a file
+Timestamp_unittest.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/Timestamp_unittest.cc.s
+.PHONY : Timestamp_unittest.cc.s
 
 # Help Target
 help:
@@ -188,8 +200,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... muduo_base"
 	@echo "... timestamp_unittest"
+	@echo "... Timestamp_unittest.o"
+	@echo "... Timestamp_unittest.i"
+	@echo "... Timestamp_unittest.s"
 .PHONY : help
 
 
@@ -201,6 +215,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

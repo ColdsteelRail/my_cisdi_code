@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Timestamp.h
+muduo/base/copyable.h
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/copyable.h
+muduo/base/Types.h
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/Types.h
+boost/operators.hpp
+-
+
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Types.h
+stdint.h
+-
+string.h
+-
+string
+-
+assert.h
+-
+
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/copyable.h
+
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Timestamp_unittest.cc
+muduo/base/Timestamp.h
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/muduo/base/Timestamp.h
+vector
+-
+stdio.h
+-
+
