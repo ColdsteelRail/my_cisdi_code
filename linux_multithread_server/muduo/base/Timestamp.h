@@ -75,11 +75,6 @@ inline bool operator<(Timestamp lhs, Timestamp rhs)
   return lhs.microSecondsSinceEpoch() < rhs.microSecondsSinceEpoch();
 }
 
-inline bool operator<(Timestamp lhs, Timestamp rhs)
-{
-  return lhs.microSecondsSinceEpoch() < rhs.microSecondsSinceEpoch();
-}
-
 ///
 /// Gets time difference of two timestamps, result in seconds.
 ///
