@@ -1,2 +1,6 @@
 add_executable(timestamp_unittest Timestamp_unittest.cc)
 target_link_libraries(timestamp_unittest muduo_base)
+
+add_executable(atomic_unittest Atomic_unittest.cc)
+# 不需要，Atomic只含头文件，已包含target_link_libraries(atomic_unittest muduo_base)
+add_test(NAME atomic_unittest COMMAND atomic_unittest)
