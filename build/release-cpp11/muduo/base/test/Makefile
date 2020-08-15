@@ -178,6 +178,20 @@ exception_test/fast:
 .PHONY : exception_test/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/thread_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/thread_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/thread_test.dir/rule
+
+# Convenience name for target.
+thread_test: muduo/base/test/CMakeFiles/thread_test.dir/rule
+.PHONY : thread_test
+
+# fast build rule for target.
+thread_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/build
+.PHONY : thread_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
@@ -239,6 +253,30 @@ Exception_test.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/Exception_test.cc.s
 .PHONY : Exception_test.cc.s
 
+Thread_test.o: Thread_test.cc.o
+.PHONY : Thread_test.o
+
+# target to build an object file
+Thread_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/Thread_test.cc.o
+.PHONY : Thread_test.cc.o
+
+Thread_test.i: Thread_test.cc.i
+.PHONY : Thread_test.i
+
+# target to preprocess a source file
+Thread_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/Thread_test.cc.i
+.PHONY : Thread_test.cc.i
+
+Thread_test.s: Thread_test.cc.s
+.PHONY : Thread_test.s
+
+# target to generate assembly for a file
+Thread_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/Thread_test.cc.s
+.PHONY : Thread_test.cc.s
+
 Timestamp_unittest.o: Timestamp_unittest.cc.o
 .PHONY : Timestamp_unittest.o
 
@@ -278,6 +316,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... thread_test"
 	@echo "... timestamp_unittest"
 	@echo "... Atomic_unittest.o"
 	@echo "... Atomic_unittest.i"
@@ -285,6 +324,9 @@ help:
 	@echo "... Exception_test.o"
 	@echo "... Exception_test.i"
 	@echo "... Exception_test.s"
+	@echo "... Thread_test.o"
+	@echo "... Thread_test.i"
+	@echo "... Thread_test.s"
 	@echo "... Timestamp_unittest.o"
 	@echo "... Timestamp_unittest.i"
 	@echo "... Timestamp_unittest.s"

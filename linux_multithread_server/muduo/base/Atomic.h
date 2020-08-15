@@ -22,7 +22,7 @@ class AtomicIntegerT : noncopyable
 
     T get()
     {
-      return __sync_val_comparable_and_swap(&value_, 0, 0);
+      return __sync_val_compare_and_swap(&value_, 0, 0);
     }
 
     T getAndAdd(T x)

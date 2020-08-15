@@ -38,14 +38,22 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Logging.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/StringPiece.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Date.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/copyable.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Types.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Atomic.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/LogStream.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Condition.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Timestamp.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Mutex.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Thread.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/TimeZone.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/noncopyable.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CountDownLatch.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

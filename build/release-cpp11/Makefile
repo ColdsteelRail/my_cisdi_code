@@ -189,6 +189,19 @@ exception_test/fast:
 .PHONY : exception_test/fast
 
 #=============================================================================
+# Target rules for targets named thread_test
+
+# Build rule for target.
+thread_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread_test
+.PHONY : thread_test
+
+# fast build rule for target.
+thread_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/build
+.PHONY : thread_test/fast
+
+#=============================================================================
 # Target rules for targets named timestamp_unittest
 
 # Build rule for target.
@@ -217,6 +230,7 @@ help:
 	@echo "... muduo_base"
 	@echo "... atomic_unittest"
 	@echo "... exception_test"
+	@echo "... thread_test"
 	@echo "... timestamp_unittest"
 .PHONY : help
 
