@@ -76,7 +76,7 @@ muduo/base/preinstall: muduo/base/test/preinstall
 muduo/base/CMakeFiles/muduo_base.dir/all:
 	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/depend
 	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  3 4
 	@echo "Built target muduo_base"
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/all
 
@@ -86,7 +86,7 @@ all: muduo/base/CMakeFiles/muduo_base.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/CMakeFiles/muduo_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/rule
@@ -108,10 +108,14 @@ clean: muduo/base/CMakeFiles/muduo_base.dir/clean
 # Directory level rules for directory muduo/base/test
 
 # Convenience name for "all" pass in the directory.
+muduo/base/test/all: muduo/base/test/CMakeFiles/atomic_unittest.dir/all
+muduo/base/test/all: muduo/base/test/CMakeFiles/exception_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
 .PHONY : muduo/base/test/all
 
 # Convenience name for "clean" pass in the directory.
+muduo/base/test/clean: muduo/base/test/CMakeFiles/atomic_unittest.dir/clean
+muduo/base/test/clean: muduo/base/test/CMakeFiles/exception_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/timestamp_unittest.dir/clean
 .PHONY : muduo/base/test/clean
 
@@ -120,13 +124,83 @@ muduo/base/test/preinstall:
 .PHONY : muduo/base/test/preinstall
 
 #=============================================================================
+# Target rules for target muduo/base/test/CMakeFiles/atomic_unittest.dir
+
+# All Build rule for target.
+muduo/base/test/CMakeFiles/atomic_unittest.dir/all:
+	$(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/depend
+	$(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  1
+	@echo "Built target atomic_unittest"
+.PHONY : muduo/base/test/CMakeFiles/atomic_unittest.dir/all
+
+# Include target in all.
+all: muduo/base/test/CMakeFiles/atomic_unittest.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+muduo/base/test/CMakeFiles/atomic_unittest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/atomic_unittest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
+.PHONY : muduo/base/test/CMakeFiles/atomic_unittest.dir/rule
+
+# Convenience name for target.
+atomic_unittest: muduo/base/test/CMakeFiles/atomic_unittest.dir/rule
+.PHONY : atomic_unittest
+
+# clean rule for target.
+muduo/base/test/CMakeFiles/atomic_unittest.dir/clean:
+	$(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/clean
+.PHONY : muduo/base/test/CMakeFiles/atomic_unittest.dir/clean
+
+# clean rule for target.
+clean: muduo/base/test/CMakeFiles/atomic_unittest.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target muduo/base/test/CMakeFiles/exception_test.dir
+
+# All Build rule for target.
+muduo/base/test/CMakeFiles/exception_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+	$(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/depend
+	$(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  2
+	@echo "Built target exception_test"
+.PHONY : muduo/base/test/CMakeFiles/exception_test.dir/all
+
+# Include target in all.
+all: muduo/base/test/CMakeFiles/exception_test.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+muduo/base/test/CMakeFiles/exception_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/exception_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
+.PHONY : muduo/base/test/CMakeFiles/exception_test.dir/rule
+
+# Convenience name for target.
+exception_test: muduo/base/test/CMakeFiles/exception_test.dir/rule
+.PHONY : exception_test
+
+# clean rule for target.
+muduo/base/test/CMakeFiles/exception_test.dir/clean:
+	$(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/clean
+.PHONY : muduo/base/test/CMakeFiles/exception_test.dir/clean
+
+# clean rule for target.
+clean: muduo/base/test/CMakeFiles/exception_test.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target muduo/base/test/CMakeFiles/timestamp_unittest.dir
 
 # All Build rule for target.
 muduo/base/test/CMakeFiles/timestamp_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  5
 	@echo "Built target timestamp_unittest"
 .PHONY : muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
 
@@ -136,7 +210,7 @@ all: muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
 .PHONY : muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule

@@ -163,6 +163,32 @@ muduo_base/fast:
 .PHONY : muduo_base/fast
 
 #=============================================================================
+# Target rules for targets named atomic_unittest
+
+# Build rule for target.
+atomic_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 atomic_unittest
+.PHONY : atomic_unittest
+
+# fast build rule for target.
+atomic_unittest/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/build
+.PHONY : atomic_unittest/fast
+
+#=============================================================================
+# Target rules for targets named exception_test
+
+# Build rule for target.
+exception_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exception_test
+.PHONY : exception_test
+
+# fast build rule for target.
+exception_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/build
+.PHONY : exception_test/fast
+
+#=============================================================================
 # Target rules for targets named timestamp_unittest
 
 # Build rule for target.
@@ -189,6 +215,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... muduo_base"
+	@echo "... atomic_unittest"
+	@echo "... exception_test"
 	@echo "... timestamp_unittest"
 .PHONY : help
 

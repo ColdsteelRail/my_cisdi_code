@@ -5,6 +5,21 @@
   "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Timestamp.cc"
 },
 {
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/muduo_base.dir/Exception.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.cc"
+},
+{
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Atomic_unittest.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Atomic_unittest.cc"
+},
+{
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/exception_test.dir/Exception_test.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Exception_test.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Exception_test.cc"
+},
+{
   "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
   "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/timestamp_unittest.dir/Timestamp_unittest.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Timestamp_unittest.cc",
   "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Timestamp_unittest.cc"

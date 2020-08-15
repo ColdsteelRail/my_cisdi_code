@@ -163,6 +163,30 @@ muduo_base/fast:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
 .PHONY : muduo_base/fast
 
+Exception.o: Exception.cc.o
+.PHONY : Exception.o
+
+# target to build an object file
+Exception.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o
+.PHONY : Exception.cc.o
+
+Exception.i: Exception.cc.i
+.PHONY : Exception.i
+
+# target to preprocess a source file
+Exception.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.i
+.PHONY : Exception.cc.i
+
+Exception.s: Exception.cc.s
+.PHONY : Exception.s
+
+# target to generate assembly for a file
+Exception.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.s
+.PHONY : Exception.cc.s
+
 Timestamp.o: Timestamp.cc.o
 .PHONY : Timestamp.o
 
@@ -201,6 +225,9 @@ help:
 	@echo "... muduo_base"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... Exception.o"
+	@echo "... Exception.i"
+	@echo "... Exception.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"

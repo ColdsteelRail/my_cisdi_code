@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/muduo_base.dir/Timestamp.cc.o"
+  "CMakeFiles/muduo_base.dir/Exception.cc.o"
   "../../lib/libmuduo_base.pdb"
   "../../lib/libmuduo_base.a"
 )

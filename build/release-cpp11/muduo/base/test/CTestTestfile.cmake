@@ -4,3 +4,4 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(atomic_unittest "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/bin/atomic_unittest")

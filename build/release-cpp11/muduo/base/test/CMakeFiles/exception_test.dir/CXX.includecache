@@ -10,12 +10,6 @@
 muduo/base/Types.h
 /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/Types.h
 
-/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.cc
-muduo/base/Exception.h
-/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/Exception.h
-muduo/base/CurrentThread.h
-/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/CurrentThread.h
-
 /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.h
 muduo/base/Types.h
 /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/muduo/base/Types.h
@@ -30,5 +24,17 @@ string.h
 string
 -
 assert.h
+-
+
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Exception_test.cc
+muduo/base/CurrentThread.h
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/muduo/base/CurrentThread.h
+muduo/base/Exception.h
+/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/muduo/base/Exception.h
+functional
+-
+vector
+-
+stdio.h
 -
 

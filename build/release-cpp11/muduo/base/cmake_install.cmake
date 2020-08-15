@@ -45,6 +45,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Timestamp.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Exception.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Thread.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/noncopyable.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

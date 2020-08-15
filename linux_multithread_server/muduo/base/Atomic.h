@@ -16,7 +16,7 @@ class AtomicIntegerT : noncopyable
 {
 
  public:
-   AtomicInteger()
+   AtomicIntegerT()
      :  value_(0)
     {}
 
