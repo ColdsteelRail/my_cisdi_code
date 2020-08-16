@@ -56,6 +56,11 @@
 },
 {
   "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/blockingQueue_test.dir/BlockingQueue_test.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/BlockingQueue_test.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/BlockingQueue_test.cc"
+},
+{
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
   "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/countDownLatch_test.dir/CountDownLatch_test.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/CountDownLatch_test.cc",
   "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/CountDownLatch_test.cc"
 },

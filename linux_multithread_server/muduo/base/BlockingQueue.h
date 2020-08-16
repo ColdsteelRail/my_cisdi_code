@@ -42,7 +42,7 @@ class BlockingQueue : noncopyable
     return front;
   }
 
-  size_T size() const // const下mutex必须可以改变因此mutable -> mutex_
+  size_t size() const // const下mutex必须可以改变因此mutable -> mutex_
   {
     MutexLockGuard lock(mutex_);
     return queue_.size();
@@ -52,7 +52,7 @@ class BlockingQueue : noncopyable
   mutable MutexLock mutex_;
   Condition         notEmpty_ GUARDED_BY(mutex_);
   std::deque<T>     queue_ GUARDED_BY(mutex_);
-}
+};
 
 } // namspace muduo
 

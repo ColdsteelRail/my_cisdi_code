@@ -16,3 +16,6 @@ target_link_libraries(mutex_test muduo_base)
 
 add_executable(countDownLatch_test CountDownLatch_test.cc)
 target_link_libraries(countDownLatch_test muduo_base)
+
+add_executable(blockingQueue_test BlockingQueue_test.cc)
+target_link_libraries(blockingQueue_test muduo_base)
