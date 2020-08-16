@@ -22,3 +22,6 @@ target_link_libraries(blockingQueue_test muduo_base)
 
 add_executable(blockingQueue_bench BlockingQueue_bench.cc)
 target_link_libraries(blockingQueue_bench muduo_base)
+
+add_executable(boundedBlockingQueue_test BoundedBlockingQueue_test.cc)
+target_link_libraries(boundedBlockingQueue_test muduo_base)
