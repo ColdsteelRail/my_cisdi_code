@@ -176,6 +176,19 @@ atomic_unittest/fast:
 .PHONY : atomic_unittest/fast
 
 #=============================================================================
+# Target rules for targets named blockingQueue_bench
+
+# Build rule for target.
+blockingQueue_bench: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blockingQueue_bench
+.PHONY : blockingQueue_bench
+
+# fast build rule for target.
+blockingQueue_bench/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build
+.PHONY : blockingQueue_bench/fast
+
+#=============================================================================
 # Target rules for targets named blockingQueue_test
 
 # Build rule for target.
@@ -268,6 +281,7 @@ help:
 	@echo "... test"
 	@echo "... muduo_base"
 	@echo "... atomic_unittest"
+	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"
 	@echo "... countDownLatch_test"
 	@echo "... exception_test"

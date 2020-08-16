@@ -164,6 +164,20 @@ atomic_unittest/fast:
 .PHONY : atomic_unittest/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/blockingQueue_bench.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/blockingQueue_bench.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/blockingQueue_bench.dir/rule
+
+# Convenience name for target.
+blockingQueue_bench: muduo/base/test/CMakeFiles/blockingQueue_bench.dir/rule
+.PHONY : blockingQueue_bench
+
+# fast build rule for target.
+blockingQueue_bench/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build
+.PHONY : blockingQueue_bench/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/blockingQueue_test.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/blockingQueue_test.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/blockingQueue_test.dir/rule
@@ -270,6 +284,30 @@ Atomic_unittest.s: Atomic_unittest.cc.s
 Atomic_unittest.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.s
 .PHONY : Atomic_unittest.cc.s
+
+BlockingQueue_bench.o: BlockingQueue_bench.cc.o
+.PHONY : BlockingQueue_bench.o
+
+# target to build an object file
+BlockingQueue_bench.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_bench.dir/BlockingQueue_bench.cc.o
+.PHONY : BlockingQueue_bench.cc.o
+
+BlockingQueue_bench.i: BlockingQueue_bench.cc.i
+.PHONY : BlockingQueue_bench.i
+
+# target to preprocess a source file
+BlockingQueue_bench.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_bench.dir/BlockingQueue_bench.cc.i
+.PHONY : BlockingQueue_bench.cc.i
+
+BlockingQueue_bench.s: BlockingQueue_bench.cc.s
+.PHONY : BlockingQueue_bench.s
+
+# target to generate assembly for a file
+BlockingQueue_bench.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_bench.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_bench.dir/BlockingQueue_bench.cc.s
+.PHONY : BlockingQueue_bench.cc.s
 
 BlockingQueue_test.o: BlockingQueue_test.cc.o
 .PHONY : BlockingQueue_test.o
@@ -422,6 +460,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... atomic_unittest"
+	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"
 	@echo "... countDownLatch_test"
 	@echo "... edit_cache"
@@ -438,6 +477,9 @@ help:
 	@echo "... Atomic_unittest.o"
 	@echo "... Atomic_unittest.i"
 	@echo "... Atomic_unittest.s"
+	@echo "... BlockingQueue_bench.o"
+	@echo "... BlockingQueue_bench.i"
+	@echo "... BlockingQueue_bench.s"
 	@echo "... BlockingQueue_test.o"
 	@echo "... BlockingQueue_test.i"
 	@echo "... BlockingQueue_test.s"

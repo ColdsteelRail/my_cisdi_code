@@ -19,3 +19,6 @@ target_link_libraries(countDownLatch_test muduo_base)
 
 add_executable(blockingQueue_test BlockingQueue_test.cc)
 target_link_libraries(blockingQueue_test muduo_base)
+
+add_executable(blockingQueue_bench BlockingQueue_bench.cc)
+target_link_libraries(blockingQueue_bench muduo_base)
