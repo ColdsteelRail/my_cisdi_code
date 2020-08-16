@@ -21,7 +21,7 @@ class BlockingQueue : noncopyable
     {
     }
 
-  void put(T&& x)
+  void put(T&& x) // make std::move valid (then unique_ptr is safe)
   {
     MutexLockGuard lock(mutex_);
     queue_.push_back(std::move(x)); // wait morphing saves us
