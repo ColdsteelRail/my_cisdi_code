@@ -21,7 +21,7 @@ class BlockingQueue : noncopyable
     {
     }
 
-  void put(const T& x)
+  void put(T&& x)
   {
     MutexLockGuard lock(mutex_);
     queue_.push_back(std::move(x)); // wait morphing saves us
