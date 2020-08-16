@@ -58,6 +58,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "muduo/base/test/CMakeFiles/atomic_unittest.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/blockingQueue_bench.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/blockingQueue_test.dir/DependInfo.cmake"
+  "muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/countDownLatch_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/exception_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/mutex_test.dir/DependInfo.cmake"

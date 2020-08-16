@@ -79,8 +79,8 @@ class Test
         }
 
         std::vector<std::unique_ptr<muduo::Thread>> threads_;
-        muduo::CountDownLatch latch_;
         muduo::BoundedBlockingQueue<std::string> queue_;
+        muduo::CountDownLatch latch_;
 };
 void testMove()
 {

@@ -192,6 +192,20 @@ blockingQueue_test/fast:
 .PHONY : blockingQueue_test/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/rule
+
+# Convenience name for target.
+boundedBlockingQueue_test: muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/rule
+.PHONY : boundedBlockingQueue_test
+
+# fast build rule for target.
+boundedBlockingQueue_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build
+.PHONY : boundedBlockingQueue_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule
@@ -333,6 +347,30 @@ BlockingQueue_test.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/blockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/blockingQueue_test.dir/BlockingQueue_test.cc.s
 .PHONY : BlockingQueue_test.cc.s
 
+BoundedBlockingQueue_test.o: BoundedBlockingQueue_test.cc.o
+.PHONY : BoundedBlockingQueue_test.o
+
+# target to build an object file
+BoundedBlockingQueue_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/BoundedBlockingQueue_test.cc.o
+.PHONY : BoundedBlockingQueue_test.cc.o
+
+BoundedBlockingQueue_test.i: BoundedBlockingQueue_test.cc.i
+.PHONY : BoundedBlockingQueue_test.i
+
+# target to preprocess a source file
+BoundedBlockingQueue_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/BoundedBlockingQueue_test.cc.i
+.PHONY : BoundedBlockingQueue_test.cc.i
+
+BoundedBlockingQueue_test.s: BoundedBlockingQueue_test.cc.s
+.PHONY : BoundedBlockingQueue_test.s
+
+# target to generate assembly for a file
+BoundedBlockingQueue_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/BoundedBlockingQueue_test.cc.s
+.PHONY : BoundedBlockingQueue_test.cc.s
+
 CountDownLatch_test.o: CountDownLatch_test.cc.o
 .PHONY : CountDownLatch_test.o
 
@@ -462,6 +500,7 @@ help:
 	@echo "... atomic_unittest"
 	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"
+	@echo "... boundedBlockingQueue_test"
 	@echo "... countDownLatch_test"
 	@echo "... edit_cache"
 	@echo "... exception_test"
@@ -483,6 +522,9 @@ help:
 	@echo "... BlockingQueue_test.o"
 	@echo "... BlockingQueue_test.i"
 	@echo "... BlockingQueue_test.s"
+	@echo "... BoundedBlockingQueue_test.o"
+	@echo "... BoundedBlockingQueue_test.i"
+	@echo "... BoundedBlockingQueue_test.s"
 	@echo "... CountDownLatch_test.o"
 	@echo "... CountDownLatch_test.i"
 	@echo "... CountDownLatch_test.s"

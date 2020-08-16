@@ -202,6 +202,19 @@ blockingQueue_test/fast:
 .PHONY : blockingQueue_test/fast
 
 #=============================================================================
+# Target rules for targets named boundedBlockingQueue_test
+
+# Build rule for target.
+boundedBlockingQueue_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boundedBlockingQueue_test
+.PHONY : boundedBlockingQueue_test
+
+# fast build rule for target.
+boundedBlockingQueue_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build.make muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/build
+.PHONY : boundedBlockingQueue_test/fast
+
+#=============================================================================
 # Target rules for targets named countDownLatch_test
 
 # Build rule for target.
@@ -283,6 +296,7 @@ help:
 	@echo "... atomic_unittest"
 	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"
+	@echo "... boundedBlockingQueue_test"
 	@echo "... countDownLatch_test"
 	@echo "... exception_test"
 	@echo "... mutex_test"
