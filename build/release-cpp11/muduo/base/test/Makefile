@@ -178,6 +178,20 @@ exception_test/fast:
 .PHONY : exception_test/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/mutex_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/mutex_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/mutex_test.dir/rule
+
+# Convenience name for target.
+mutex_test: muduo/base/test/CMakeFiles/mutex_test.dir/rule
+.PHONY : mutex_test
+
+# fast build rule for target.
+mutex_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/mutex_test.dir/build.make muduo/base/test/CMakeFiles/mutex_test.dir/build
+.PHONY : mutex_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/thread_test.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/thread_test.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/thread_test.dir/rule
@@ -253,6 +267,30 @@ Exception_test.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/exception_test.dir/build.make muduo/base/test/CMakeFiles/exception_test.dir/Exception_test.cc.s
 .PHONY : Exception_test.cc.s
 
+Mutex_test.o: Mutex_test.cc.o
+.PHONY : Mutex_test.o
+
+# target to build an object file
+Mutex_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/mutex_test.dir/build.make muduo/base/test/CMakeFiles/mutex_test.dir/Mutex_test.cc.o
+.PHONY : Mutex_test.cc.o
+
+Mutex_test.i: Mutex_test.cc.i
+.PHONY : Mutex_test.i
+
+# target to preprocess a source file
+Mutex_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/mutex_test.dir/build.make muduo/base/test/CMakeFiles/mutex_test.dir/Mutex_test.cc.i
+.PHONY : Mutex_test.cc.i
+
+Mutex_test.s: Mutex_test.cc.s
+.PHONY : Mutex_test.s
+
+# target to generate assembly for a file
+Mutex_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/mutex_test.dir/build.make muduo/base/test/CMakeFiles/mutex_test.dir/Mutex_test.cc.s
+.PHONY : Mutex_test.cc.s
+
 Thread_test.o: Thread_test.cc.o
 .PHONY : Thread_test.o
 
@@ -314,6 +352,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... mutex_test"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... thread_test"
@@ -324,6 +363,9 @@ help:
 	@echo "... Exception_test.o"
 	@echo "... Exception_test.i"
 	@echo "... Exception_test.s"
+	@echo "... Mutex_test.o"
+	@echo "... Mutex_test.i"
+	@echo "... Mutex_test.s"
 	@echo "... Thread_test.o"
 	@echo "... Thread_test.i"
 	@echo "... Thread_test.s"

@@ -10,3 +10,6 @@ target_link_libraries(exception_test muduo_base)
 
 add_executable(thread_test Thread_test.cc)
 target_link_libraries(thread_test muduo_base)
+
+add_executable(mutex_test Mutex_test.cc)
+target_link_libraries(mutex_test muduo_base)

@@ -57,6 +57,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/atomic_unittest.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/exception_test.dir/DependInfo.cmake"
+  "muduo/base/test/CMakeFiles/mutex_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/thread_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/timestamp_unittest.dir/DependInfo.cmake"
   )
