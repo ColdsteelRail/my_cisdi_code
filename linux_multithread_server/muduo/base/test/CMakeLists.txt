@@ -13,3 +13,6 @@ target_link_libraries(thread_test muduo_base)
 
 add_executable(mutex_test Mutex_test.cc)
 target_link_libraries(mutex_test muduo_base)
+
+add_executable(countDownLatch_test CountDownLatch_test.cc)
+target_link_libraries(countDownLatch_test muduo_base)

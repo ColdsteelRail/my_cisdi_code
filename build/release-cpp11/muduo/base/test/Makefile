@@ -164,6 +164,20 @@ atomic_unittest/fast:
 .PHONY : atomic_unittest/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule
+
+# Convenience name for target.
+countDownLatch_test: muduo/base/test/CMakeFiles/countDownLatch_test.dir/rule
+.PHONY : countDownLatch_test
+
+# fast build rule for target.
+countDownLatch_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/countDownLatch_test.dir/build.make muduo/base/test/CMakeFiles/countDownLatch_test.dir/build
+.PHONY : countDownLatch_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/exception_test.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/exception_test.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/exception_test.dir/rule
@@ -242,6 +256,30 @@ Atomic_unittest.s: Atomic_unittest.cc.s
 Atomic_unittest.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/atomic_unittest.dir/build.make muduo/base/test/CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.s
 .PHONY : Atomic_unittest.cc.s
+
+CountDownLatch_test.o: CountDownLatch_test.cc.o
+.PHONY : CountDownLatch_test.o
+
+# target to build an object file
+CountDownLatch_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/countDownLatch_test.dir/build.make muduo/base/test/CMakeFiles/countDownLatch_test.dir/CountDownLatch_test.cc.o
+.PHONY : CountDownLatch_test.cc.o
+
+CountDownLatch_test.i: CountDownLatch_test.cc.i
+.PHONY : CountDownLatch_test.i
+
+# target to preprocess a source file
+CountDownLatch_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/countDownLatch_test.dir/build.make muduo/base/test/CMakeFiles/countDownLatch_test.dir/CountDownLatch_test.cc.i
+.PHONY : CountDownLatch_test.cc.i
+
+CountDownLatch_test.s: CountDownLatch_test.cc.s
+.PHONY : CountDownLatch_test.s
+
+# target to generate assembly for a file
+CountDownLatch_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/countDownLatch_test.dir/build.make muduo/base/test/CMakeFiles/countDownLatch_test.dir/CountDownLatch_test.cc.s
+.PHONY : CountDownLatch_test.cc.s
 
 Exception_test.o: Exception_test.cc.o
 .PHONY : Exception_test.o
@@ -346,6 +384,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... atomic_unittest"
+	@echo "... countDownLatch_test"
 	@echo "... edit_cache"
 	@echo "... exception_test"
 	@echo "... install"
@@ -360,6 +399,9 @@ help:
 	@echo "... Atomic_unittest.o"
 	@echo "... Atomic_unittest.i"
 	@echo "... Atomic_unittest.s"
+	@echo "... CountDownLatch_test.o"
+	@echo "... CountDownLatch_test.i"
+	@echo "... CountDownLatch_test.s"
 	@echo "... Exception_test.o"
 	@echo "... Exception_test.i"
 	@echo "... Exception_test.s"

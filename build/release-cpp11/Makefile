@@ -176,6 +176,19 @@ atomic_unittest/fast:
 .PHONY : atomic_unittest/fast
 
 #=============================================================================
+# Target rules for targets named countDownLatch_test
+
+# Build rule for target.
+countDownLatch_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 countDownLatch_test
+.PHONY : countDownLatch_test
+
+# fast build rule for target.
+countDownLatch_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/countDownLatch_test.dir/build.make muduo/base/test/CMakeFiles/countDownLatch_test.dir/build
+.PHONY : countDownLatch_test/fast
+
+#=============================================================================
 # Target rules for targets named exception_test
 
 # Build rule for target.
@@ -242,6 +255,7 @@ help:
 	@echo "... test"
 	@echo "... muduo_base"
 	@echo "... atomic_unittest"
+	@echo "... countDownLatch_test"
 	@echo "... exception_test"
 	@echo "... mutex_test"
 	@echo "... thread_test"
