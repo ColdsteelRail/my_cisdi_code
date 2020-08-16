@@ -35,11 +35,12 @@ class BoundedBlockingQueue : noncopyable
       notFull_.wait();
     }
     assert(!queue_.full());
-    queue_.push_back(x);
-    notEmpty_.notify();
+    queue_.push_back(x); 
+    notEmpty_.notify(); // 每次向buffer内put，都唤醒需要使用buffer值的程序:take()
+                        // 而不是在非空时才唤醒（多线程可能抢占导致出错）
   }
 
-  void put(T&& x)
+  void put(T&& x)   // 重载，支持move
   {
     MutexLockGuard lock(mutex_);
     while (queue_.full())
@@ -59,7 +60,7 @@ class BoundedBlockingQueue : noncopyable
       notEmpty_.wait();
     }
     assert(!queue_.empty());
-    T front(std::move(queue_.front()));
+    T front(std::move(queue_.front())); // take也用move
     queue_.pop_front();
     notFull_.notify();
     return front;
