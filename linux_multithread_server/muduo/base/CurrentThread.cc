@@ -13,10 +13,12 @@ namespace muduo
 {
 namespace CurrentThread
 {
-__thread int t_cachedTid = 0;
-__thread char t_tidString[32];
-__thread int t_tidStringLength = 6;
-__thread const char* t_threadName = "unknown";
+  /// _thread修饰，为线程局部存储的全局变量，私有的
+  /// 无_thread则为 全局变量（每个线程共享）
+__thread int t_cachedTid = 0;   // 线程真实pid缓存，减少::syscall(SYS_gettid)次数
+__thread char t_tidString[32];  // tid字符串表示
+__thread int t_tidStringLength = 6;  // 
+__thread const char* t_threadName = "unknown";  // 线程名
 static_assert(std::is_same<int, pid_t>::value, "pid_t should be int");
 
 string stackTrace(bool demangle)
