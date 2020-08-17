@@ -248,6 +248,20 @@ mutex_test/fast:
 .PHONY : mutex_test/fast
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/singleton_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/singleton_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/singleton_test.dir/rule
+
+# Convenience name for target.
+singleton_test: muduo/base/test/CMakeFiles/singleton_test.dir/rule
+.PHONY : singleton_test
+
+# fast build rule for target.
+singleton_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/build
+.PHONY : singleton_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/threadPool_test.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/threadPool_test.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/threadPool_test.dir/rule
@@ -457,6 +471,30 @@ Mutex_test.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/mutex_test.dir/build.make muduo/base/test/CMakeFiles/mutex_test.dir/Mutex_test.cc.s
 .PHONY : Mutex_test.cc.s
 
+Singleton_test.o: Singleton_test.cc.o
+.PHONY : Singleton_test.o
+
+# target to build an object file
+Singleton_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/Singleton_test.cc.o
+.PHONY : Singleton_test.cc.o
+
+Singleton_test.i: Singleton_test.cc.i
+.PHONY : Singleton_test.i
+
+# target to preprocess a source file
+Singleton_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/Singleton_test.cc.i
+.PHONY : Singleton_test.cc.i
+
+Singleton_test.s: Singleton_test.cc.s
+.PHONY : Singleton_test.s
+
+# target to generate assembly for a file
+Singleton_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/Singleton_test.cc.s
+.PHONY : Singleton_test.cc.s
+
 ThreadPool_test.o: ThreadPool_test.cc.o
 .PHONY : ThreadPool_test.o
 
@@ -548,6 +586,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... mutex_test"
 	@echo "... rebuild_cache"
+	@echo "... singleton_test"
 	@echo "... test"
 	@echo "... threadPool_test"
 	@echo "... thread_test"
@@ -573,6 +612,9 @@ help:
 	@echo "... Mutex_test.o"
 	@echo "... Mutex_test.i"
 	@echo "... Mutex_test.s"
+	@echo "... Singleton_test.o"
+	@echo "... Singleton_test.i"
+	@echo "... Singleton_test.s"
 	@echo "... ThreadPool_test.o"
 	@echo "... ThreadPool_test.i"
 	@echo "... ThreadPool_test.s"

@@ -35,7 +35,7 @@ class Singleton : noncopyable
             // pthread_once 保证只执行一次，线程安全，高效
             pthread_once(&ponce_, &Singleton::init);
             assert(value_ != NULL);
-            return *value;
+            return *value_;
         }
 
     private:
@@ -62,9 +62,9 @@ class Singleton : noncopyable
             value_ = NULL;
         }
 
-    ptivate:
+    private:
         static pthread_once_t ponce_;
-        static*               value_; 
+        static T*             value_; 
 };
 
 template<typename T>

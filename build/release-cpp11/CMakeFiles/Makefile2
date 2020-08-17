@@ -115,6 +115,7 @@ muduo/base/test/all: muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/al
 muduo/base/test/all: muduo/base/test/CMakeFiles/countDownLatch_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/exception_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/mutex_test.dir/all
+muduo/base/test/all: muduo/base/test/CMakeFiles/singleton_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/threadPool_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/thread_test.dir/all
 muduo/base/test/all: muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
@@ -128,6 +129,7 @@ muduo/base/test/clean: muduo/base/test/CMakeFiles/boundedBlockingQueue_test.dir/
 muduo/base/test/clean: muduo/base/test/CMakeFiles/countDownLatch_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/exception_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/mutex_test.dir/clean
+muduo/base/test/clean: muduo/base/test/CMakeFiles/singleton_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/threadPool_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/thread_test.dir/clean
 muduo/base/test/clean: muduo/base/test/CMakeFiles/timestamp_unittest.dir/clean
@@ -383,13 +385,48 @@ clean: muduo/base/test/CMakeFiles/mutex_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target muduo/base/test/CMakeFiles/singleton_test.dir
+
+# All Build rule for target.
+muduo/base/test/CMakeFiles/singleton_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+	$(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/depend
+	$(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  19
+	@echo "Built target singleton_test"
+.PHONY : muduo/base/test/CMakeFiles/singleton_test.dir/all
+
+# Include target in all.
+all: muduo/base/test/CMakeFiles/singleton_test.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+muduo/base/test/CMakeFiles/singleton_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/singleton_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles 0
+.PHONY : muduo/base/test/CMakeFiles/singleton_test.dir/rule
+
+# Convenience name for target.
+singleton_test: muduo/base/test/CMakeFiles/singleton_test.dir/rule
+.PHONY : singleton_test
+
+# clean rule for target.
+muduo/base/test/CMakeFiles/singleton_test.dir/clean:
+	$(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/clean
+.PHONY : muduo/base/test/CMakeFiles/singleton_test.dir/clean
+
+# clean rule for target.
+clean: muduo/base/test/CMakeFiles/singleton_test.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target muduo/base/test/CMakeFiles/threadPool_test.dir
 
 # All Build rule for target.
 muduo/base/test/CMakeFiles/threadPool_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/test/CMakeFiles/threadPool_test.dir/build.make muduo/base/test/CMakeFiles/threadPool_test.dir/depend
 	$(MAKE) -f muduo/base/test/CMakeFiles/threadPool_test.dir/build.make muduo/base/test/CMakeFiles/threadPool_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  19
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  20
 	@echo "Built target threadPool_test"
 .PHONY : muduo/base/test/CMakeFiles/threadPool_test.dir/all
 
@@ -424,7 +461,7 @@ clean: muduo/base/test/CMakeFiles/threadPool_test.dir/clean
 muduo/base/test/CMakeFiles/thread_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/depend
 	$(MAKE) -f muduo/base/test/CMakeFiles/thread_test.dir/build.make muduo/base/test/CMakeFiles/thread_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  21
 	@echo "Built target thread_test"
 .PHONY : muduo/base/test/CMakeFiles/thread_test.dir/all
 
@@ -459,7 +496,7 @@ clean: muduo/base/test/CMakeFiles/thread_test.dir/clean
 muduo/base/test/CMakeFiles/timestamp_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/CMakeFiles  22
 	@echo "Built target timestamp_unittest"
 .PHONY : muduo/base/test/CMakeFiles/timestamp_unittest.dir/all
 

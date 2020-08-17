@@ -254,6 +254,19 @@ mutex_test/fast:
 .PHONY : mutex_test/fast
 
 #=============================================================================
+# Target rules for targets named singleton_test
+
+# Build rule for target.
+singleton_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 singleton_test
+.PHONY : singleton_test
+
+# fast build rule for target.
+singleton_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/singleton_test.dir/build.make muduo/base/test/CMakeFiles/singleton_test.dir/build
+.PHONY : singleton_test/fast
+
+#=============================================================================
 # Target rules for targets named threadPool_test
 
 # Build rule for target.
@@ -313,6 +326,7 @@ help:
 	@echo "... countDownLatch_test"
 	@echo "... exception_test"
 	@echo "... mutex_test"
+	@echo "... singleton_test"
 	@echo "... threadPool_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"

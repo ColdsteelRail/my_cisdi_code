@@ -42,6 +42,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/StringPiece.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/BlockingQueue.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Date.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Singleton.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/copyable.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Types.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Atomic.h"
