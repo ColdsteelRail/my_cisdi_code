@@ -8,6 +8,7 @@ set(base_SRCS
    LogStream.cc
    Timestamp.cc
    Thread.cc
+   ThreadPool.cc
    TimeZone.cc
   )
 

@@ -12,6 +12,7 @@ class Test
 {
     public:
         Test(int numThreads)
+            // 必须按照声明的顺序初始化
             : queue_(20),
               latch_(numThreads)
         {
