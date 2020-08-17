@@ -28,3 +28,6 @@ target_link_libraries(boundedBlockingQueue_test muduo_base)
 
 add_executable(threadPool_test ThreadPool_test.cc)
 target_link_libraries(threadPool_test muduo_base)
+
+add_executable(singleton_test Singleton_test.cc)
+target_link_libraries(singleton_test muduo_base)
