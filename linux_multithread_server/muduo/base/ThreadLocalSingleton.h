@@ -22,17 +22,6 @@ class ThreadLocalSingleton : noncopyable
         ~ThreadLocalSingleton() = delete;
     
 
-    
-    private:
-        static void destructor(void* obj)
-        {
-            assert(obj == t_value_);
-            typedef char T_must_be_complete_type[sizeof(T) == 0 ? -1 : 1];
-            T_must_be_complete_type dummy; (void) dummy;
-            delete t_value_;
-            t_value_ = 0;
-        }
-
         static T& instance()
         {
             if (!t_value_)
@@ -44,6 +33,17 @@ class ThreadLocalSingleton : noncopyable
         }
 
         static T* pointer()
+    
+    private:
+        static void destructor(void* obj)
+        {
+            assert(obj == t_value_);
+            typedef char T_must_be_complete_type[sizeof(T) == 0 ? -1 : 1];
+            T_must_be_complete_type dummy; (void) dummy;
+            delete t_value_;
+            t_value_ = 0;
+        }
+
         {
             return t_value_;
         }
