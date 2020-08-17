@@ -80,4 +80,14 @@ int main()
   }
 }
 
-
+/*
+single thread without lock 0.068592
+single thread with lock 0.417220
+1 thread(s) with lock 0.498005
+2 thread(s) with lock 0.896541
+3 thread(s) with lock 1.453430
+4 thread(s) with lock 1.672895
+5 thread(s) with lock 1.982083
+6 thread(s) with lock 2.818533
+7 thread(s) with lock 2.609600
+*/

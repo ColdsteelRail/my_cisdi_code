@@ -89,3 +89,15 @@ int main()
   sleep(2);
   printf("number of created threads %d\n", muduo::Thread::numCreated());
 }
+/*
+pid=4113, tid=4113
+t1.tid=4114
+tid=4114
+t2.tid=4115
+tid=4115, x=42
+tid=4116, Foo::x_=87.530000
+tid=4117, Foo::x_=87.530000, text=Shuo Chen
+tid=4118
+tid=4119
+number of created threads 6
+*/

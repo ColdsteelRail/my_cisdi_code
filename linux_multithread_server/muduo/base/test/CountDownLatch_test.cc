@@ -67,7 +67,17 @@ int main()
 }
 
 
-
+/*
+pid=4090, tid=4090
+pid=4090, tid=4090 main running ...
+tid=4091, work thread 0 started
+tid=4091, work thread 0 stopped
+tid=4092, work thread 1 started
+tid=4092, work thread 1 stopped
+tid=4093, work thread 2 started
+tid=4093, work thread 2 stopped
+number of created threads 3
+*/
 
 
 

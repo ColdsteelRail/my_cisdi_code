@@ -59,3 +59,22 @@ int main()
 
   pthread_exit(0);
 }
+
+/*
+tid=4081, constructing 0xda9040
+tid=4081, obj1 0xda9040 name=main one
+tid=4081, constructing 0xda9060
+tid=4081, obj2 0xda9060 name=
+tid=4082, constructing 0x7fe8880008c0
+tid=4082, obj1 0x7fe8880008c0 name=
+tid=4082, constructing 0x7fe8880008e0
+tid=4082, obj2 0x7fe8880008e0 name=
+tid=4082, obj1 0x7fe8880008c0 name=changed 1
+tid=4082, obj2 0x7fe8880008e0 name=changed 42
+tid=4082, destructing 0x7fe8880008c0 changed 1
+tid=4082, destructing 0x7fe8880008e0 changed 42
+tid=4081, obj1 0xda9040 name=main one
+tid=4081, obj2 0xda9060 name=main two
+tid=4081, destructing 0xda9040 main one
+tid=4081, destructing 0xda9060 main two
+*/

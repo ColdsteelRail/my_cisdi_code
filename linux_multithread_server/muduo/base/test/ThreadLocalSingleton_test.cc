@@ -56,3 +56,17 @@ int main()
 
   pthread_exit(0);
 }
+
+/*
+tid=4084, constructing 0x157b040
+tid=4085, constructing 0x7f73240008c0
+tid=4085, 0x7f73240008c0 name=
+tid=4085, 0x7f73240008c0 name=thread1
+tid=4085, destructing 0x7f73240008c0 thread1
+tid=4084, 0x157b040 name=main one
+tid=4086, constructing 0x7f73240008c0
+tid=4086, 0x7f73240008c0 name=
+tid=4086, 0x7f73240008c0 name=thread2
+tid=4086, destructing 0x7f73240008c0 thread2
+tid=4084, destructing 0x157b040 main one
+*/

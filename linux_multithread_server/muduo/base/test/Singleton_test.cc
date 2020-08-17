@@ -73,3 +73,12 @@ int main()
 }
 // 主线程结束，Test对象销毁，调用析构函数
 // 打印tid=0, destructing 0x15a0040 only one, changed
+
+/*
+tid=4156, constructing 0x25d7040
+tid=4157, 0x25d7040 name=only one
+tid=4156, 0x25d7040 name=only one, changed
+tid=4156, constructing TestNoDestroy 0x25d7210
+with valgrind, you should see 1-byte memory leak.
+tid=4156, destructing 0x25d7040 only one, changed
+*/
