@@ -49,15 +49,28 @@ void threadFunc()
 
 int main()
 {
-  testObj1.value().setName("main one");
-  print();
-  muduo::Thread t1(threadFunc);
+  // 打印constructing
+  testObj1.value().setName("main one"); // line 76
+  // 打印obj1 obj2，此时obj已经初始化name=main one
+  // obj2未初始化，name为空
+  print(); // line 77~79
+  
+  muduo::Thread t1(threadFunc); // line 80~86
+  // t1调用print，只是tid为主线程id+1=t1, 打印constructing
+  // t1的local未初始化，name都为空
+  // 设置changed1 changed42
+  // t1调用print 名字已经改变
   t1.start();
-  t1.join();
-  testObj2.value().setName("main two");
-  print();
+  // t1结束，析构obj1 obj2，打印destructing
+  t1.join(); // line 87 88
 
-  pthread_exit(0);
+  testObj2.value().setName("main two"); 
+  // 打印，tid为主线程id
+  print(); // line 89 90
+
+  // 主线程终止，释放主线程的obj1 obj2，打印destructing
+  pthread_exit(0); // line 91 92
+
 }
 
 /*

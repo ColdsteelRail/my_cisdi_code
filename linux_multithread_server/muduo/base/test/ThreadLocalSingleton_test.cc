@@ -42,19 +42,19 @@ void threadFunc(const char* changeTo)
 
 int main()
 {
-  muduo::ThreadLocalSingleton<Test>::instance().setName("main one");
+  muduo::ThreadLocalSingleton<Test>::instance().setName("main one"); // line 61
   muduo::Thread t1(std::bind(threadFunc, "thread1"));
   muduo::Thread t2(std::bind(threadFunc, "thread2"));
-  t1.start();
-  t2.start();
-  t1.join();
+  t1.start(); // line 62~64
+  t2.start(); // line 67~69
+  t1.join();  // line 65
   printf("tid=%d, %p name=%s\n",
          muduo::CurrentThread::tid(),
          &muduo::ThreadLocalSingleton<Test>::instance(),
-         muduo::ThreadLocalSingleton<Test>::instance().name().c_str());
-  t2.join();
+         muduo::ThreadLocalSingleton<Test>::instance().name().c_str()); // line 66
+  t2.join(); // line 70
 
-  pthread_exit(0);
+  pthread_exit(0);  // line 71
 }
 
 /*

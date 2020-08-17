@@ -21,23 +21,27 @@ class ThreadLocal : noncopyable
     public:
         ThreadLocal()
         {
-            // 回调函数destrucot来删除实际数据T
+            // 当线程退出时自动回调destrucot来删除实际数据T
             MCHECK(pthread_key_create(&pkey_, &ThreadLocal::destructor));
+            // pthread_key_create(pthread_key_t*, callbackfunction*)
         }
 
         ~ThreadLocal()
         {
             // 仅仅销毁kye,并没有销毁实际数据
             MCHECK(pthread_key_delete(pkey_));
+            // pthread_key_delete(pthread_key_t)
         }
 
         T& value()
         {
             // get获取 set设置
+            // pthread_getspecific(pthread_key_t)
             T* perThreadValue = static_cast<T*>(pthread_getspecific(pkey_));
             if (!perThreadValue)
             {
                 T* newObj = new T();
+                // pthread_setspecific(pthread_key_t, T)
                 MCHECK(pthread_setspecific(pkey_, newObj));
                 perThreadValue = newObj;
             }
