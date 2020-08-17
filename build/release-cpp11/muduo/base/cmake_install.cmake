@@ -41,6 +41,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Logging.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/StringPiece.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/BlockingQueue.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadLocalSingleton.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Date.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Singleton.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/copyable.h"
@@ -56,6 +57,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/TimeZone.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadPool.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/BoundedBlockingQueue.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadLocal.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/noncopyable.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CountDownLatch.h"
     )

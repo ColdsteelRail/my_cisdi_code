@@ -7,6 +7,8 @@
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/CMakeFiles/muduo_base.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/mutex_test.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/singleton_test.dir
+/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/threadLocalSingleton_test.dir
+/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/threadLocal_test.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/threadPool_test.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/thread_test.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/timestamp_unittest.dir

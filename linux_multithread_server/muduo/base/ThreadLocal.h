@@ -38,14 +38,14 @@ class ThreadLocal : noncopyable
             if (!perThreadValue)
             {
                 T* newObj = new T();
-                MCHECK(pthread_setspacific(pkey_, newObj));
+                MCHECK(pthread_setspecific(pkey_, newObj));
                 perThreadValue = newObj;
             }
             return *perThreadValue;
         }
 
     private:
-        static void destructor()
+        static void destructor(void* x)
         {
             T* obj = static_cast<T*>(x);
             typedef char T_must_be_complete_type[sizeof(T) == 0 ? -1 : 1];

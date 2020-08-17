@@ -267,6 +267,32 @@ singleton_test/fast:
 .PHONY : singleton_test/fast
 
 #=============================================================================
+# Target rules for targets named threadLocalSingleton_test
+
+# Build rule for target.
+threadLocalSingleton_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threadLocalSingleton_test
+.PHONY : threadLocalSingleton_test
+
+# fast build rule for target.
+threadLocalSingleton_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/threadLocalSingleton_test.dir/build.make muduo/base/test/CMakeFiles/threadLocalSingleton_test.dir/build
+.PHONY : threadLocalSingleton_test/fast
+
+#=============================================================================
+# Target rules for targets named threadLocal_test
+
+# Build rule for target.
+threadLocal_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threadLocal_test
+.PHONY : threadLocal_test
+
+# fast build rule for target.
+threadLocal_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/threadLocal_test.dir/build.make muduo/base/test/CMakeFiles/threadLocal_test.dir/build
+.PHONY : threadLocal_test/fast
+
+#=============================================================================
 # Target rules for targets named threadPool_test
 
 # Build rule for target.
@@ -327,6 +353,8 @@ help:
 	@echo "... exception_test"
 	@echo "... mutex_test"
 	@echo "... singleton_test"
+	@echo "... threadLocalSingleton_test"
+	@echo "... threadLocal_test"
 	@echo "... threadPool_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
