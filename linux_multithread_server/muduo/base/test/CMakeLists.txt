@@ -27,4 +27,4 @@ add_executable(boundedBlockingQueue_test BoundedBlockingQueue_test.cc)
 target_link_libraries(boundedBlockingQueue_test muduo_base)
 
 add_executable(threadPool_test ThreadPool_test.cc)
-target_link_libraries(threadPoll_test muduo_base)
+target_link_libraries(threadPool_test muduo_base)

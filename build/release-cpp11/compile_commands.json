@@ -46,6 +46,11 @@
 },
 {
   "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/muduo_base.dir/ThreadPool.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadPool.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadPool.cc"
+},
+{
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base",
   "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/muduo_base.dir/TimeZone.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/TimeZone.cc",
   "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/TimeZone.cc"
 },
@@ -83,6 +88,11 @@
   "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
   "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/mutex_test.dir/Mutex_test.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Mutex_test.cc",
   "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/Mutex_test.cc"
+},
+{
+  "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",
+  "command": "/usr/bin/c++    -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -I/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server    -o CMakeFiles/threadPool_test.dir/ThreadPool_test.cc.o -c /home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/ThreadPool_test.cc",
+  "file": "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/ThreadPool_test.cc"
 },
 {
   "directory": "/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test",

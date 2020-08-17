@@ -254,6 +254,19 @@ mutex_test/fast:
 .PHONY : mutex_test/fast
 
 #=============================================================================
+# Target rules for targets named threadPool_test
+
+# Build rule for target.
+threadPool_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threadPool_test
+.PHONY : threadPool_test
+
+# fast build rule for target.
+threadPool_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/threadPool_test.dir/build.make muduo/base/test/CMakeFiles/threadPool_test.dir/build
+.PHONY : threadPool_test/fast
+
+#=============================================================================
 # Target rules for targets named thread_test
 
 # Build rule for target.
@@ -300,6 +313,7 @@ help:
 	@echo "... countDownLatch_test"
 	@echo "... exception_test"
 	@echo "... mutex_test"
+	@echo "... threadPool_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
 .PHONY : help

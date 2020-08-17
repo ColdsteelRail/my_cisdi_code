@@ -80,7 +80,7 @@ void ThreadPool::run(Task task)
     // 若线程池没有线程，主线程执行
     // 如果任务队列满，等待出队
     // notEmpty_被唤醒，保证消费端一定能执行
-    if(threads.emtpy())
+    if(threads_.empty())
     {
         task();
     }
@@ -98,12 +98,12 @@ void ThreadPool::run(Task task)
     
 }
 
-ThreadPool::Task ThraedPool::take()
+ThreadPool::Task ThreadPool::take()
 {
     // 让一个任务出队，并返回此任务
     MutexLockGuard lock(mutex_);
     // always use a while-loop, due to spurious wakeup
-    while(queue.empty() && running)
+    while(queue_.empty() && running_)
     {
         notEmpty_.wait();
     }
@@ -112,7 +112,7 @@ ThreadPool::Task ThraedPool::take()
     if(!queue_.empty())
     {
         task = queue_.front();
-        queue.pop_front();
+        queue_.pop_front();
         if(maxQueueSize_ > 0)
         {
             notFull_.notify();
@@ -141,7 +141,7 @@ void ThreadPool::runInThread()
             Task task(take());
             if (task)
             {
-                task()
+                task();
             }
         }
     }

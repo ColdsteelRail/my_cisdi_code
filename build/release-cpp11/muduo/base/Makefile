@@ -355,6 +355,30 @@ Thread.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.s
 .PHONY : Thread.cc.s
 
+ThreadPool.o: ThreadPool.cc.o
+.PHONY : ThreadPool.o
+
+# target to build an object file
+ThreadPool.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.o
+.PHONY : ThreadPool.cc.o
+
+ThreadPool.i: ThreadPool.cc.i
+.PHONY : ThreadPool.i
+
+# target to preprocess a source file
+ThreadPool.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.i
+.PHONY : ThreadPool.cc.i
+
+ThreadPool.s: ThreadPool.cc.s
+.PHONY : ThreadPool.s
+
+# target to generate assembly for a file
+ThreadPool.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.s
+.PHONY : ThreadPool.cc.s
+
 TimeZone.o: TimeZone.cc.o
 .PHONY : TimeZone.o
 
@@ -441,6 +465,9 @@ help:
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
+	@echo "... ThreadPool.o"
+	@echo "... ThreadPool.i"
+	@echo "... ThreadPool.s"
 	@echo "... TimeZone.o"
 	@echo "... TimeZone.i"
 	@echo "... TimeZone.s"

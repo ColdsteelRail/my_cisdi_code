@@ -8,6 +8,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/muduo_base.dir/LogStream.cc.o"
   "CMakeFiles/muduo_base.dir/Timestamp.cc.o"
   "CMakeFiles/muduo_base.dir/Thread.cc.o"
+  "CMakeFiles/muduo_base.dir/ThreadPool.cc.o"
   "CMakeFiles/muduo_base.dir/TimeZone.cc.o"
   "../../lib/libmuduo_base.pdb"
   "../../lib/libmuduo_base.a"
