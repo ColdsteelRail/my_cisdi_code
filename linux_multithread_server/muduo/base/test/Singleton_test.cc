@@ -27,6 +27,7 @@ class Test : muduo::noncopyable
 class TestNoDestroy : muduo::noncopyable
 {
     public:
+        // no_destroy未定义，因此不完整，不会析构
         void no_destroy();
 
         TestNoDestroy()
@@ -52,12 +53,16 @@ void threadFunc()
 
 int main()
 {
+    // 主线程创建Test单例，打印tid=0, constructing 0x15a0040
     muduo::Singleton<Test>::instance().setName("only one");
     muduo::Thread t1(threadFunc);
 
+    // 子线程调用threadFunc, 打印tid=1, 0x15a0040 name=only one
+    // 设置name=only one, changed
     t1.start();
     t1.join();
-
+    
+    // 主线程打印tid=0, 0x15a0040 name=only one, changed
     printf("tid=%d, %p name=%s\n",
          muduo::CurrentThread::tid(),
          &muduo::Singleton<Test>::instance(),
@@ -66,3 +71,5 @@ int main()
     muduo::Singleton<TestNoDestroy>::instance();
     printf("with valgrind, you should see %zd-byte memory leak.\n", sizeof(TestNoDestroy));
 }
+// 主线程结束，Test对象销毁，调用析构函数
+// 打印tid=0, destructing 0x15a0040 only one, changed

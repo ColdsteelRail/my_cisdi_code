@@ -56,7 +56,7 @@ class Singleton : noncopyable
             // 非完全类型：例如class A{}; A* p; delete p; A则不是一个完全类型
             // 如果是不完全类型，那么sizeof(T) = 0, 那么会报错
             typedef char T_must_be_conmpete_type[sizeof(T) == 0 ? -1 : 1];
-            T_must_be_conmpete_type dummy; (void) dummy; // dummy要使用一下，否则报错
+            T_must_be_conmpete_type dummy; (void) dummy; // T_must_be_conmpete_type，dummy要使用一下，否则报错
             
             delete value_;
             value_ = NULL;
