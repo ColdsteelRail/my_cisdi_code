@@ -149,7 +149,7 @@ class LogStream : noncopyable
 
   self& operator<<(const Buffer& v)
   {
-    *this << v.toStringPiece();
+    *this << v.toStringPiece(); // 调用 operator<<(const StringPiece&)
     return *this;
   }
 
@@ -182,6 +182,7 @@ class Fmt // : noncopyable
   int length_;
 };
 
+// 
 inline LogStream& operator<<(LogStream& s, const Fmt& fmt)
 {
   s.append(fmt.data(), fmt.length());

@@ -35,14 +35,22 @@ namespace muduo
 namespace detail
 {
 
+// 这里用 9876543210123456789 目的是满足负数
+// zero[-5] = '5'
+// zero[3]  = '3'
 const char digits[] = "9876543210123456789";
 const char* zero = digits + 9;
 static_assert(sizeof(digits) == 20, "wrong number of digits");
 
+// 十六进制
 const char digitsHex[] = "0123456789ABCDEF";
+
 static_assert(sizeof digitsHex == 17, "wrong number of digitsHex");
 
 // Efficient Integer to String Conversions, by Matthew Wilson.
+// int long 转换为字符串
+// -12355222 -> "22255321-" -> "-12355222"
+// return 9 (-12355222长度)
 template<typename T>
 size_t convert(char buf[], T value)
 {
@@ -60,12 +68,15 @@ size_t convert(char buf[], T value)
   {
     *p++ = '-';
   }
-  *p = '\0';
-  std::reverse(buf, p);
-
+  *p = '\0'; // 字符串结尾
+  std::reverse(buf, p);  // 自转
   return p - buf;
 }
 
+// 指针类型 转换为字符串 
+// 和convert() 不同在于，利用了十六进制表成员变量digitsHex
+// uintptr_t 对于32位平台来说就是unsigned int
+// 对于64位平台来说是unsigned long int
 size_t convertHex(char buf[], uintptr_t value)
 {
   uintptr_t i = value;
@@ -233,11 +244,14 @@ void LogStream::staticCheck()
                 "kMaxNumericSize is large enough");
 }
 
+// 整数转字符串存放如内存
 template<typename T>
 void LogStream::formatInteger(T v)
 {
+  // 32个字节
   if (buffer_.avail() >= kMaxNumericSize)
   {
+    // int long 转换为字符串
     size_t len = convert(buffer_.current(), v);
     buffer_.add(len);
   }
@@ -291,6 +305,7 @@ LogStream& LogStream::operator<<(unsigned long long v)
   return *this;
 }
 
+// 
 LogStream& LogStream::operator<<(const void* p)
 {
   uintptr_t v = reinterpret_cast<uintptr_t>(p);
