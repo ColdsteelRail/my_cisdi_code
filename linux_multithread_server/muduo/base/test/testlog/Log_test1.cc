@@ -11,6 +11,6 @@ int main()
     // LOG_FATAL << "fetal ...";
     errno = 13;
     LOG_SYSERR << "syserr ...";
-    LOG_SYSFATAL << "sysfetal ...";
+    //LOG_SYSFATAL << "sysfetal ...";
     return 0;
 }

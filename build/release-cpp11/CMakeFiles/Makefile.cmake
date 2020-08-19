@@ -13,6 +13,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/CMakeLists.txt"
   "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CMakeLists.txt"
   "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/CMakeLists.txt"
+  "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/test/testlog/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -50,6 +51,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "muduo/base/CMakeFiles/CMakeDirectoryInformation.cmake"
   "muduo/base/test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "muduo/base/test/testlog/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -68,4 +70,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "muduo/base/test/CMakeFiles/threadPool_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/thread_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/timestamp_unittest.dir/DependInfo.cmake"
+  "muduo/base/test/testlog/CMakeFiles/log_test1.dir/DependInfo.cmake"
+  "muduo/base/test/testlog/CMakeFiles/log_test2.dir/DependInfo.cmake"
   )

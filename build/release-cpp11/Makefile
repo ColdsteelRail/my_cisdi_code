@@ -331,6 +331,32 @@ timestamp_unittest/fast:
 	$(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
 .PHONY : timestamp_unittest/fast
 
+#=============================================================================
+# Target rules for targets named log_test1
+
+# Build rule for target.
+log_test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log_test1
+.PHONY : log_test1
+
+# fast build rule for target.
+log_test1/fast:
+	$(MAKE) -f muduo/base/test/testlog/CMakeFiles/log_test1.dir/build.make muduo/base/test/testlog/CMakeFiles/log_test1.dir/build
+.PHONY : log_test1/fast
+
+#=============================================================================
+# Target rules for targets named log_test2
+
+# Build rule for target.
+log_test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 log_test2
+.PHONY : log_test2
+
+# fast build rule for target.
+log_test2/fast:
+	$(MAKE) -f muduo/base/test/testlog/CMakeFiles/log_test2.dir/build.make muduo/base/test/testlog/CMakeFiles/log_test2.dir/build
+.PHONY : log_test2/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -358,6 +384,8 @@ help:
 	@echo "... threadPool_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
+	@echo "... log_test1"
+	@echo "... log_test2"
 .PHONY : help
 
 

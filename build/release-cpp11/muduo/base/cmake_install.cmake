@@ -42,11 +42,14 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/StringPiece.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/BlockingQueue.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadLocalSingleton.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/FileUtil.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Date.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Singleton.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/copyable.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ProcessInfo.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Types.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Atomic.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/LogFile.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/LogStream.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CurrentThread.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/Condition.h"
@@ -60,6 +63,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/ThreadLocal.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/noncopyable.h"
     "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/CountDownLatch.h"
+    "/home/dcn-space/myworkspace/my_cisdi_code/linux_multithread_server/muduo/base/AsyncLogging.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

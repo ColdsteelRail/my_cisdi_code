@@ -32,3 +32,9 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
+IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  INCLUDE("/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/testlog/cmake_install.cmake")
+
+ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+

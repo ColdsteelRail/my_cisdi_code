@@ -6,9 +6,9 @@ FILE* g_file;
 
 void dummyOutput(const char* msg, int len)
 {
-    if(g_gile)
+    if(g_file)
     {
-        fwrite(msg, 1, len, gfile);
+        fwrite(msg, 1, len, g_file);
     }
 }
 
@@ -33,7 +33,7 @@ int main()
     LOG_SYSERR<<"syserr ...";
     //LOG_SYSFATAL<<"sysfatal ...";
 
-    :fclose(g_file);
+    ::fclose(g_file);
 
     return 0;
 }

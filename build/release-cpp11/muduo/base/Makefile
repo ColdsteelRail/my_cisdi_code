@@ -163,6 +163,30 @@ muduo_base/fast:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
 .PHONY : muduo_base/fast
 
+AsyncLogging.o: AsyncLogging.cc.o
+.PHONY : AsyncLogging.o
+
+# target to build an object file
+AsyncLogging.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.o
+.PHONY : AsyncLogging.cc.o
+
+AsyncLogging.i: AsyncLogging.cc.i
+.PHONY : AsyncLogging.i
+
+# target to preprocess a source file
+AsyncLogging.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.i
+.PHONY : AsyncLogging.cc.i
+
+AsyncLogging.s: AsyncLogging.cc.s
+.PHONY : AsyncLogging.s
+
+# target to generate assembly for a file
+AsyncLogging.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.s
+.PHONY : AsyncLogging.cc.s
+
 Condition.o: Condition.cc.o
 .PHONY : Condition.o
 
@@ -283,6 +307,54 @@ Exception.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.s
 .PHONY : Exception.cc.s
 
+FileUtil.o: FileUtil.cc.o
+.PHONY : FileUtil.o
+
+# target to build an object file
+FileUtil.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o
+.PHONY : FileUtil.cc.o
+
+FileUtil.i: FileUtil.cc.i
+.PHONY : FileUtil.i
+
+# target to preprocess a source file
+FileUtil.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.i
+.PHONY : FileUtil.cc.i
+
+FileUtil.s: FileUtil.cc.s
+.PHONY : FileUtil.s
+
+# target to generate assembly for a file
+FileUtil.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.s
+.PHONY : FileUtil.cc.s
+
+LogFile.o: LogFile.cc.o
+.PHONY : LogFile.o
+
+# target to build an object file
+LogFile.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.o
+.PHONY : LogFile.cc.o
+
+LogFile.i: LogFile.cc.i
+.PHONY : LogFile.i
+
+# target to preprocess a source file
+LogFile.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.i
+.PHONY : LogFile.cc.i
+
+LogFile.s: LogFile.cc.s
+.PHONY : LogFile.s
+
+# target to generate assembly for a file
+LogFile.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.s
+.PHONY : LogFile.cc.s
+
 LogStream.o: LogStream.cc.o
 .PHONY : LogStream.o
 
@@ -330,6 +402,30 @@ Logging.s: Logging.cc.s
 Logging.cc.s:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.s
 .PHONY : Logging.cc.s
+
+ProcessInfo.o: ProcessInfo.cc.o
+.PHONY : ProcessInfo.o
+
+# target to build an object file
+ProcessInfo.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.o
+.PHONY : ProcessInfo.cc.o
+
+ProcessInfo.i: ProcessInfo.cc.i
+.PHONY : ProcessInfo.i
+
+# target to preprocess a source file
+ProcessInfo.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.i
+.PHONY : ProcessInfo.cc.i
+
+ProcessInfo.s: ProcessInfo.cc.s
+.PHONY : ProcessInfo.s
+
+# target to generate assembly for a file
+ProcessInfo.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.s
+.PHONY : ProcessInfo.cc.s
 
 Thread.o: Thread.cc.o
 .PHONY : Thread.o
@@ -441,6 +537,9 @@ help:
 	@echo "... muduo_base"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... AsyncLogging.o"
+	@echo "... AsyncLogging.i"
+	@echo "... AsyncLogging.s"
 	@echo "... Condition.o"
 	@echo "... Condition.i"
 	@echo "... Condition.s"
@@ -456,12 +555,21 @@ help:
 	@echo "... Exception.o"
 	@echo "... Exception.i"
 	@echo "... Exception.s"
+	@echo "... FileUtil.o"
+	@echo "... FileUtil.i"
+	@echo "... FileUtil.s"
+	@echo "... LogFile.o"
+	@echo "... LogFile.i"
+	@echo "... LogFile.s"
 	@echo "... LogStream.o"
 	@echo "... LogStream.i"
 	@echo "... LogStream.s"
 	@echo "... Logging.o"
 	@echo "... Logging.i"
 	@echo "... Logging.s"
+	@echo "... ProcessInfo.o"
+	@echo "... ProcessInfo.i"
+	@echo "... ProcessInfo.s"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
