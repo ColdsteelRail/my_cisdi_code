@@ -17,6 +17,7 @@ class TimeZone;
 class Logger
 {
  public:
+  
   enum LogLevel
   {
     TRACE,
@@ -29,18 +30,24 @@ class Logger
   };
 
   // compile time calculation of basename of source file
+  // 编译时生成
   class SourceFile
   {
    public:
     template<int N>
+    
     SourceFile(const char (&arr)[N])
       : data_(arr),
         size_(N-1)
     {
+      // char *strrchr(const char *str, int c)
+      // *str = "C：//windows//workspace//test.cpp" c = '/'
+      // return *ret = "/test.cpp"
       const char* slash = strrchr(data_, '/'); // builtin function
+      // slash != NULL 则data_为单独文件名
       if (slash)
       {
-        data_ = slash + 1;
+        data_ = slash + 1; // + 1 省去 '/'
         size_ -= static_cast<int>(data_ - arr);
       }
     }
@@ -60,10 +67,10 @@ class Logger
     int size_;
   };
 
-  Logger(SourceFile file, int line);
-  Logger(SourceFile file, int line, LogLevel level);
-  Logger(SourceFile file, int line, LogLevel level, const char* func);
-  Logger(SourceFile file, int line, bool toAbort);
+  Logger(SourceFile file, int line); // info
+  Logger(SourceFile file, int line, LogLevel level); // warn error fetal
+  Logger(SourceFile file, int line, LogLevel level, const char* func); // trace debug
+  Logger(SourceFile file, int line, bool toAbort); // syserr sysfetal
   ~Logger();
 
   LogStream& stream() { return impl_.stream_; }
@@ -79,10 +86,11 @@ class Logger
 
  private:
 
-class Impl
+class Impl // 行号，源文件，错误等级，时间，输出流
 {
  public:
   typedef Logger::LogLevel LogLevel;
+  
   Impl(LogLevel level, int old_errno, const SourceFile& file, int line);
   void formatTime();
   void finish();
@@ -121,16 +129,30 @@ inline Logger::LogLevel Logger::logLevel()
 //   else
 //     logWarnStream << "Bad news";
 //
+
+// 按流方式操作日志
+// __FILE__ 文件名
+// __LINE__ 行号
+// __func__ 函数名
+// logger::-- 级别 /false 不会退出程序 /true 退出程序
+
 #define LOG_TRACE if (muduo::Logger::logLevel() <= muduo::Logger::TRACE) \
   muduo::Logger(__FILE__, __LINE__, muduo::Logger::TRACE, __func__).stream()
+
 #define LOG_DEBUG if (muduo::Logger::logLevel() <= muduo::Logger::DEBUG) \
   muduo::Logger(__FILE__, __LINE__, muduo::Logger::DEBUG, __func__).stream()
+
 #define LOG_INFO if (muduo::Logger::logLevel() <= muduo::Logger::INFO) \
   muduo::Logger(__FILE__, __LINE__).stream()
+
 #define LOG_WARN muduo::Logger(__FILE__, __LINE__, muduo::Logger::WARN).stream()
+
 #define LOG_ERROR muduo::Logger(__FILE__, __LINE__, muduo::Logger::ERROR).stream()
+
 #define LOG_FATAL muduo::Logger(__FILE__, __LINE__, muduo::Logger::FATAL).stream()
+
 #define LOG_SYSERR muduo::Logger(__FILE__, __LINE__, false).stream()
+
 #define LOG_SYSFATAL muduo::Logger(__FILE__, __LINE__, true).stream()
 
 const char* strerror_tl(int savedErrno);

@@ -44,8 +44,10 @@ const char* strerror_tl(int savedErrno)
   return strerror_r(savedErrno, t_errnobuf, sizeof t_errnobuf);
 }
 
+// 初始化loglevel，日志级别
 Logger::LogLevel initLogLevel()
 {
+  // 环境变量读取
   if (::getenv("MUDUO_LOG_TRACE"))
     return Logger::TRACE;
   else if (::getenv("MUDUO_LOG_DEBUG"))
@@ -87,6 +89,7 @@ inline LogStream& operator<<(LogStream& s, T v)
   return s;
 }
 
+// memcpy 设置为inline更高效
 inline LogStream& operator<<(LogStream& s, const Logger::SourceFile& v)
 {
   s.append(v.data_, v.size_);
