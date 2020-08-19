@@ -37,3 +37,5 @@ target_link_libraries(threadLocal_test muduo_base)
 
 add_executable(threadLocalSingleton_test ThreadLocalSingleton_test.cc)
 target_link_libraries(threadLocalSingleton_test muduo_base)
+
+add_subdirectory(testlog)
