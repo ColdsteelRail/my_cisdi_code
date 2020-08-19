@@ -80,3 +80,22 @@ int main()
   benchLogStream<void*>();
 
 }
+/*
+benchPrintf 0.288973
+int
+benchPrintf 0.277193
+benchStringStream 0.293512
+benchLogStream 0.045553
+double
+benchPrintf 0.788600
+benchStringStream 1.189252
+benchLogStream 0.841853
+int64_t
+benchPrintf 0.289823
+benchStringStream 0.323913
+benchLogStream 0.034821
+void*
+benchPrintf 0.258012
+benchStringStream 0.326238
+benchLogStream 0.025408
+*/
