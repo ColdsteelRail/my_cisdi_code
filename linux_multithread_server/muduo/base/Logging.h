@@ -130,6 +130,7 @@ inline Logger::LogLevel Logger::logLevel()
 //     logWarnStream << "Bad news";
 //
 
+// 匿名对象，不使用自动销毁
 // 按流方式操作日志
 // __FILE__ 文件名
 // __LINE__ 行号

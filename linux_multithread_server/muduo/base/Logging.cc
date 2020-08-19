@@ -98,6 +98,7 @@ inline LogStream& operator<<(LogStream& s, const Logger::SourceFile& v)
 
 void defaultOutput(const char* msg, int len)
 {
+  // 默认output，将缓冲区的内容，输出到stdout标准输出
   size_t n = fwrite(msg, 1, len, stdout);
   //FIXME check n
   (void)n;
@@ -123,10 +124,12 @@ Logger::Impl::Impl(LogLevel level, int savedErrno, const SourceFile& file, int l
     line_(line),
     basename_(file)
 {
-  formatTime();
-  CurrentThread::tid();
-  stream_ << T(CurrentThread::tidString(), CurrentThread::tidStringLength());
-  stream_ << T(LogLevelName[level], 6);
+  formatTime();   // 向stream_输入时间
+  CurrentThread::tid(); // 缓存线程id
+  stream_ << T(CurrentThread::tidString(), CurrentThread::tidStringLength()); // 线程id存入logstream_uffer
+  stream_ << T(LogLevelName[level], 6); // 安全级别存入logstream_buffer
+
+  // savedErrno=errno
   if (savedErrno != 0)
   {
     stream_ << strerror_tl(savedErrno) << " (errno=" << savedErrno << ") ";
@@ -191,7 +194,7 @@ Logger::Logger(SourceFile file, int line, LogLevel level)
   : impl_(level, 0, file, line)
 {
 }
-
+//errno全局变量
 Logger::Logger(SourceFile file, int line, bool toAbort)
   : impl_(toAbort?FATAL:ERROR, errno, file, line)
 {
@@ -200,11 +203,13 @@ Logger::Logger(SourceFile file, int line, bool toAbort)
 Logger::~Logger()
 {
   impl_.finish();
+  // 缓冲区的buffer引用
   const LogStream::Buffer& buf(stream().buffer());
+  // 缓冲放入标准输出stdout
   g_output(buf.data(), buf.length());
   if (impl_.level_ == FATAL)
   {
-    g_flush();
+    g_flush(); // 刷新标准输出stdout 
     abort();
   }
 }
