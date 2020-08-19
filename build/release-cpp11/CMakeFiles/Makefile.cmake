@@ -57,6 +57,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
+  "muduo/base/test/CMakeFiles/asyncLogging_test.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/atomic_unittest.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/blockingQueue_bench.dir/DependInfo.cmake"
   "muduo/base/test/CMakeFiles/blockingQueue_test.dir/DependInfo.cmake"

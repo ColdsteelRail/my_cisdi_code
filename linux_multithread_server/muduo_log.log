@@ -1,0 +1,4 @@
+20200819 13:01:59.088600Z  2735 INFO  info ... - Log_test2.cc:28
+20200819 13:01:59.088635Z  2735 WARN  warn ... - Log_test2.cc:29
+20200819 13:01:59.088635Z  2735 ERROR error ... - Log_test2.cc:30
+20200819 13:01:59.088637Z  2735 ERROR Permission denied (errno=13) syserr ... - Log_test2.cc:33

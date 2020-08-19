@@ -19,7 +19,7 @@ void dummyFlush()
 
 int main()
 {
-    g_file = ::fopen("temp/muduo_log","ae");
+    g_file = fopen("muduo_log.log","ae");
     muduo::Logger::setOutput(dummyOutput);
     muduo::Logger::setFlush(dummyFlush);
 
@@ -33,7 +33,7 @@ int main()
     LOG_SYSERR<<"syserr ...";
     //LOG_SYSFATAL<<"sysfatal ...";
 
-    ::fclose(g_file);
+    fclose(g_file);
 
     return 0;
 }

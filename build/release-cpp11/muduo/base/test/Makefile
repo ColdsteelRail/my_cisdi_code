@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+muduo/base/test/CMakeFiles/asyncLogging_test.dir/rule:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/asyncLogging_test.dir/rule
+.PHONY : muduo/base/test/CMakeFiles/asyncLogging_test.dir/rule
+
+# Convenience name for target.
+asyncLogging_test: muduo/base/test/CMakeFiles/asyncLogging_test.dir/rule
+.PHONY : asyncLogging_test
+
+# fast build rule for target.
+asyncLogging_test/fast:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/asyncLogging_test.dir/build.make muduo/base/test/CMakeFiles/asyncLogging_test.dir/build
+.PHONY : asyncLogging_test/fast
+
+# Convenience name for target.
 muduo/base/test/CMakeFiles/atomic_unittest.dir/rule:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/test/CMakeFiles/atomic_unittest.dir/rule
 .PHONY : muduo/base/test/CMakeFiles/atomic_unittest.dir/rule
@@ -330,6 +344,30 @@ timestamp_unittest: muduo/base/test/CMakeFiles/timestamp_unittest.dir/rule
 timestamp_unittest/fast:
 	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/test/CMakeFiles/timestamp_unittest.dir/build
 .PHONY : timestamp_unittest/fast
+
+AsyncLogging_test.o: AsyncLogging_test.cc.o
+.PHONY : AsyncLogging_test.o
+
+# target to build an object file
+AsyncLogging_test.cc.o:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/asyncLogging_test.dir/build.make muduo/base/test/CMakeFiles/asyncLogging_test.dir/AsyncLogging_test.cc.o
+.PHONY : AsyncLogging_test.cc.o
+
+AsyncLogging_test.i: AsyncLogging_test.cc.i
+.PHONY : AsyncLogging_test.i
+
+# target to preprocess a source file
+AsyncLogging_test.cc.i:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/asyncLogging_test.dir/build.make muduo/base/test/CMakeFiles/asyncLogging_test.dir/AsyncLogging_test.cc.i
+.PHONY : AsyncLogging_test.cc.i
+
+AsyncLogging_test.s: AsyncLogging_test.cc.s
+.PHONY : AsyncLogging_test.s
+
+# target to generate assembly for a file
+AsyncLogging_test.cc.s:
+	cd /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11 && $(MAKE) -f muduo/base/test/CMakeFiles/asyncLogging_test.dir/build.make muduo/base/test/CMakeFiles/asyncLogging_test.dir/AsyncLogging_test.cc.s
+.PHONY : AsyncLogging_test.cc.s
 
 Atomic_unittest.o: Atomic_unittest.cc.o
 .PHONY : Atomic_unittest.o
@@ -649,6 +687,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... asyncLogging_test"
 	@echo "... atomic_unittest"
 	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"
@@ -669,6 +708,9 @@ help:
 	@echo "... threadPool_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
+	@echo "... AsyncLogging_test.o"
+	@echo "... AsyncLogging_test.i"
+	@echo "... AsyncLogging_test.s"
 	@echo "... Atomic_unittest.o"
 	@echo "... Atomic_unittest.i"
 	@echo "... Atomic_unittest.s"

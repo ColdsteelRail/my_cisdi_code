@@ -163,6 +163,19 @@ muduo_base/fast:
 .PHONY : muduo_base/fast
 
 #=============================================================================
+# Target rules for targets named asyncLogging_test
+
+# Build rule for target.
+asyncLogging_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asyncLogging_test
+.PHONY : asyncLogging_test
+
+# fast build rule for target.
+asyncLogging_test/fast:
+	$(MAKE) -f muduo/base/test/CMakeFiles/asyncLogging_test.dir/build.make muduo/base/test/CMakeFiles/asyncLogging_test.dir/build
+.PHONY : asyncLogging_test/fast
+
+#=============================================================================
 # Target rules for targets named atomic_unittest
 
 # Build rule for target.
@@ -371,6 +384,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... muduo_base"
+	@echo "... asyncLogging_test"
 	@echo "... atomic_unittest"
 	@echo "... blockingQueue_bench"
 	@echo "... blockingQueue_test"

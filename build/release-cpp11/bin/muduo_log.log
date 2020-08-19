@@ -1,0 +1,8 @@
+20200819 13:03:23.265470Z  2741 INFO  info ... - Log_test2.cc:28
+20200819 13:03:23.265498Z  2741 WARN  warn ... - Log_test2.cc:29
+20200819 13:03:23.265498Z  2741 ERROR error ... - Log_test2.cc:30
+20200819 13:03:23.265500Z  2741 ERROR Permission denied (errno=13) syserr ... - Log_test2.cc:33
+20200819 13:04:11.539473Z  2871 INFO  info ... - Log_test2.cc:28
+20200819 13:04:11.539510Z  2871 WARN  warn ... - Log_test2.cc:29
+20200819 13:04:11.539511Z  2871 ERROR error ... - Log_test2.cc:30
+20200819 13:04:11.539512Z  2871 ERROR Permission denied (errno=13) syserr ... - Log_test2.cc:33

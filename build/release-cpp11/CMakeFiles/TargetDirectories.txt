@@ -1,3 +1,4 @@
+/home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/asyncLogging_test.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/atomic_unittest.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/blockingQueue_bench.dir
 /home/dcn-space/myworkspace/my_cisdi_code/build/release-cpp11/muduo/base/test/CMakeFiles/blockingQueue_test.dir

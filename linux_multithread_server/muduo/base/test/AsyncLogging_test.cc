@@ -6,7 +6,7 @@
 #include <sys/resource.h>
 #include <unistd.h>
 
-off_t kRollSize = 500*1000*1000
+off_t kRollSize = 500*1000*1000;
 
 muduo::AsyncLogging* g_asyncLog = NULL;
 
@@ -33,12 +33,12 @@ void bench(bool longLog)
             LOG_INFO << "Hello 0123456789" << " abcdefghijklmnopqrstuvwxyz "
                << (longLog ? longStr : empty)
                << cnt;
-            ++CNT;
+            ++cnt;
         }
-        MUDUO::Timestamp end = muduo::Timestamp::now();
+        muduo::Timestamp end = muduo::Timestamp::now();
         printf("%f\n", timeDifference(end, start)*1000000/kBatch);
         struct timespec ts = {0, 500*1000*1000 };
-        naosleep(&ts, NULL);
+        nanosleep(&ts, NULL);
     }
 }
 
