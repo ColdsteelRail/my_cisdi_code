@@ -49,6 +49,9 @@ target_link_libraries(threadLocalSingleton_test muduo_base)
 add_executable(asyncLogging_test AsyncLogging_test.cc)
 target_link_libraries(asyncLogging_test muduo_base)
 
+add_executable(logStream_bench LogStream_bench.cc)
+target_link_libraries(logStream_bench muduo_base)
+
 if(BOOSTTEST_LIBRARY) # boost单元测试框架，test.cc文件中没有main函数，只有用例
 add_executable(logStream_test LogStream_test.cc)
 target_link_libraries(logStream_test muduo_base boost_unit_test_framework)
