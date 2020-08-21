@@ -3,7 +3,7 @@
 #include "muduo/base/Thread.h"
 #include "muduo/base/Timestamp.h"
 
-#include <map>
+#include <unordered_map>
 #include <string>
 #include <vector>
 #include <stdio.h>
@@ -63,7 +63,7 @@ class Bench
            muduo::CurrentThread::tid(),
            muduo::CurrentThread::name());
 
-    std::map<int, int> delays;
+    std::unordered_map<int, int> delays;
     latch_.countDown();
     bool running = true;
     while (running)
