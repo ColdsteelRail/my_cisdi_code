@@ -1,0 +1,18 @@
+main : 4.4.0
+test : 4.14.194
+zD   : 4.14.67 
+
+how to complie linx kernel:
+sudu su
+make menuconfig
+make -j 4
+make modules_install
+make install // this command changes etc/default/grub automatically
+
+make sure:
+vim /boot/grub/grub.cfg
+the complied kernel option in the file
+
+there is no grub when booting:
+vim /etc/default/grub
+disabled the 'GRUB_HIDDEN_TIMEOUT=0' with '#'
