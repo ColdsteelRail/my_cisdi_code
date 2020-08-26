@@ -6,17 +6,18 @@ SOURCE_DIR=`pwd`
 BUILD_DIR=${BUILD_DIR:-../../build_my_code}
 BUILD_TYPE=${BUILD_TYPE:-release}
 INSTALL_DIR=${INSTALL_DIR:-../${BUILD_TYPE}-install-cpp11}
-CXX=${CXX:-g++} # C++编译器选项
+CXX=${CXX:-g++}
+ # C++编译器选项
 
 #ln -sf $BUILD_DIR/$BUILD_TYPE-cpp11/compile_commands.json
 
 mkdir -p $BUILD_DIR/$BUILD_TYPE-cpp11 \
   && cd $BUILD_DIR/$BUILD_TYPE-cpp11 \
-  && cmake \ # generate the CMakeFile, CMameCache.txt, cmake_install.cmake, Makefile
+  && cmake \
            -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
            -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR \
            -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-           $SOURCE_DIR \ # 执行pwd
+           $SOURCE_DIR \
   && make $* 
   #cmake  -DCMAKE_BUILD_TYPE=release \ 
   #       -DCMAKE_INSTALL_PREFIX=../release-install-cpp11 \
