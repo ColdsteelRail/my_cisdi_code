@@ -50,8 +50,9 @@ string(REPLACE ";" " " CMAKE_CXX_FLAGS "${CXX_FLAGS}")
 
 set(CMAKE_CXX_FLAGS_DEBUG "-O0")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+# PROJECT_BINARY_DIR为cmake执行的目录
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin) # 定义可执行文件
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib) # 定义静态链接库
 
 find_package(Boost REQUIRED)
 find_package(Protobuf)
@@ -107,7 +108,7 @@ string(TOUPPER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
 message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_TYPE}})
 
 # 编译子目录
-
+# 在cmake执行路径下，创建muduo/base文件存放其编译文件
 add_subdirectory(muduo/base)
 #add_subdirectory(muduo/net)
 
