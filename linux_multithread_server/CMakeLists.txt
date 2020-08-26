@@ -110,10 +110,10 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 # 编译子目录
 # 在cmake执行路径下，创建muduo/base文件存放其编译文件
 add_subdirectory(muduo/base)
-#add_subdirectory(muduo/net)
+add_subdirectory(muduo/net)
 
 # 编译示例代码
-# if(MUDUO_BUILD_EXAMPLES)
+#if(MUDUO_BUILD_EXAMPLES)
 #   add_subdirectory(contrib)
 #   add_subdirectory(examples)
 # else()
