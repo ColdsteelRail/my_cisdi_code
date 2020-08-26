@@ -8,7 +8,7 @@ class DiscardServer
 {
     public:
         DiscardServer(muduo::net::EventLoop* loop,
-                      const muduo::net::InntAddress& listenAddr);
+                      const muduo::net::InetAddress& listenAddr);
         
         void start();
 

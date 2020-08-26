@@ -113,12 +113,12 @@ add_subdirectory(muduo/base)
 add_subdirectory(muduo/net)
 
 # 编译示例代码
-#if(MUDUO_BUILD_EXAMPLES)
+if(MUDUO_BUILD_EXAMPLES)
 #   add_subdirectory(contrib)
-#   add_subdirectory(examples)
+   add_subdirectory(examples)
 # else()
 #   if(CARES_INCLUDE_DIR AND CARES_LIBRARY)
 #     add_subdirectory(examples/cdns)
-#   endif()
+   endif()
 # endif()
 
